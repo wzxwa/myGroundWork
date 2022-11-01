@@ -1,0 +1,287 @@
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+	res.render('index', { title: 'Express' });
+});
+
+router.get('/map/points', function(req, res, next) {
+	
+});
+
+router.get("/api/goods/search",function(req,res,next){
+	
+	console.log(req.query);
+	res.json({
+		"code":"0",
+		"data":[
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"place",
+				href:"去地图上显示"
+			},
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"web",
+				href:"https://www.baidu.com/" //跳转到一个webView
+			},
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"place",
+				href:"去地图上显示"
+			},
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"web",
+				href:"https://www.baidu.com/" //跳转到一个webView
+			}
+		]
+	});
+});
+
+router.get('/api/index_list/data',function(req,res,next){
+	res.json({
+		"code":'0',
+		"data":{
+			topBar:[					
+				{id:1,name:"推荐"},
+				{id:2,name:"园区活动"},
+				{id:3,name:"特有趣"},
+				{id:4,name:"品牌故事"}
+			],
+			data:[
+				{
+					type:"swiper-img",
+					data:[
+						{
+							id:1,
+							type:"web",
+							url:'../../static/images/swiper01.jpg',
+							href:"https://www.baidu.com/",
+						},
+						{
+							id:2,
+							type:"video",
+							url:'../../static/images/swiper02.jpg',
+							href:"https://img.cdn.aliyun.dcloud.net.cn/guide/uniapp/%E7%AC%AC1%E8%AE%B2%EF%BC%88uni-app%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D%EF%BC%89-%20DCloud%E5%AE%98%E6%96%B9%E8%A7%86%E9%A2%91%E6%95%99%E7%A8%8B@20200317.mp4",
+						},
+						{
+							id:3,
+							type:"video",
+							url:'../../static/images/swiper03.jpg',
+							href:"http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4",
+						}	
+					]
+				},
+				{
+					type:"activityList01", 
+					data:[
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						}
+					]
+				},
+				{
+					type:"activityList02", 
+					data:[
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						}
+					]
+				},
+				{
+					type:"activityList03", 
+					data:[
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"video",
+							href:"https://media.w3.org/2010/05/sintel/trailer.mp4"
+						}
+					]
+				},
+				{
+					type:"activityList04", 
+					data:[
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"web",
+							href:"https://www.baidu.com/"
+						}
+					]
+				},
+				{
+					type:"tipList",
+					data:[
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"place",
+							href:"去地图上显示"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"place",
+							href:"去地图上显示"
+						},
+						{
+							imgUrl:"../../static/images/activity01.jpg",
+							name:"【暑假哪里玩】丹景山观景台",
+							desc:"不可错过的绝世美景",
+							type:"place",
+							href:"去地图上显示"
+						}
+					]
+				}
+			]
+		}
+	})
+});
+
+//这里只写了0号推荐栏触底刷新两次数据
+router.get('/api/index_list/data/0/1',function(req,res,next){
+	res.send({
+		"code":'1',
+		"data":[
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"web",
+				href:"https://www.baidu.com/"
+			},
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"web",
+				href:"https://www.baidu.com/"
+			}
+		]
+	})
+});
+
+router.get('/api/index_list/data/0/2',function(req,res,next){
+	res.send({
+		"code":'end',
+		"data":[
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"web",
+				href:"https://www.baidu.com/"
+			},
+			{
+				imgUrl:"../../static/images/activity01.jpg",
+				name:"【暑假哪里玩】丹景山观景台",
+				desc:"不可错过的绝世美景",
+				type:"web",
+				href:"https://www.baidu.com/"
+			}
+		]
+	})
+});
+
+
+module.exports = router;

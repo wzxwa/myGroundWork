@@ -1,0 +1,225 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationBarBackgroundColor":"#00c170",
+			"app-plus": {
+				"scrollIndicator": "none",
+				"bounce": "none",
+				"type":"transparent",
+				 "titleNView": {
+				 	"buttons": [
+				 		{
+				 			"text":"\ue8b5",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "24",
+							"float": "right",
+							"color": "#fff"
+				 		},
+						{
+							"text":"\ue600",
+							"fontSrc": "/static/iconfont.ttf",
+							"fontSize": "24",
+							"float": "left",
+							"color": "#fff"
+						}
+				 	],
+					"searchInput": {
+						"align": "center",
+						"placeholder": "请输入关键词",
+						"borderRadius": "15px",
+						"backgroundColor": "#fff",
+						"disabled": true
+					}
+				}
+			}
+		}
+	}   
+        ,{
+            "path" : "pages/AR/AR",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/map/map",
+            "style" :
+            {
+                "navigationBarTitleText": "景区导览",
+                "navigationBarBackgroundColor":"#00c170",
+            	"navigationBarTextStyle": "white"
+            }  
+        }
+        ,{
+            "path" : "pages/user/user",
+            "style": {
+            	"app-plus":{
+            		"titleNView":false,
+            		"scrollIndicator":"none"
+            	}
+            }
+        }
+        ,{
+            "path" : "components/common/Recommend",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarBackgroundColor":"#00c170",
+				"app-plus": {
+					"scrollIndicator": "none",
+					"titleNView": {
+						"searchInput": {
+							"align": "left",
+							"placeholder": "请输入关键词",
+							"borderRadius": "15px",
+							"backgroundColor": "#fff",
+							"autoFocus": true
+						},
+						"buttons": [
+							{
+								"float": "right",
+								"color": "#fff",
+								"text": "搜索",
+								"fontSize": "16px",
+								"width":"55px"
+							}
+						]
+					}
+				}
+            }
+            
+        }
+        ,{
+            "path" : "pages/search-result/search-result",
+            "style" :                                                                                    
+            {
+                "navigationBarBackgroundColor":"#00c170",
+                "app-plus": {
+                	"scrollIndicator": "none",
+                	"titleNView": {
+                		"searchInput": {
+                			"align": "left",
+                			"placeholder": "请输入关键词",
+                			"borderRadius": "15px",
+                			"backgroundColor": "#fff",
+                			"autoFocus": true
+                		},
+                		"buttons": [
+                			{
+                				"float": "right",
+                				"color": "#fff",
+                				"text": "搜索",
+                				"fontSize": "16px",
+                				"width":"55px"
+                			}
+                		]
+                	}
+                }
+            }
+            
+        }
+        ,{
+            "path" : "pages/findPlaces/findPlaces",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/login-tel/login-tel",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "输入手机号",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/login-code/login-code",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "输入验证码",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+        ,{
+            "path" : "pages/webView/webView",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+		,{
+		    "path" : "pages/videoView/videoView",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	        "selectedColor":"#00c170",
+	        "color": "#999999",
+	        "backgroundColor":"#F8F8F8",
+	        "borderStyle": "white",
+	        "height":"70px",
+	        "list": [{
+				"text": "首页",
+				"pagePath": "pages/index/index",
+				"iconPath": "static/images/index.png",
+				"selectedIconPath": "static/images/Xindex.png"
+			},
+			{
+				"text": "AR",
+				"pagePath": "pages/AR/AR",
+				"iconPath": "static/images/AR.png",
+				"selectedIconPath": "static/images/XAR.png"
+			},
+			{
+				"text": "导览",
+				"pagePath": "pages/map/map",
+				"iconPath": "static/images/map.png",
+				"selectedIconPath": "static/images/Xmap.png"
+			},
+			{
+				"text": "用户",
+				"pagePath": "pages/user/user",
+				"iconPath": "static/images/user.png",
+				"selectedIconPath": "static/images/Xuser.png"
+			}
+			]
+	}
+}

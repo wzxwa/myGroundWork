@@ -1,0 +1,110 @@
+
+.login-other[data-v-b4d1e3fa]{
+		padding: 3.125rem 0;
+}
+.other-text[data-v-b4d1e3fa]{
+		display: flex;
+		padding: 1.5625rem 0;
+}
+.other-text uni-view[data-v-b4d1e3fa]{  /*这里代表文本“或者用一下方式登录”*/
+		line-height: 0px;
+		padding: 0 10px;
+}
+.other-text[data-v-b4d1e3fa]::after{ /*文本前边的那条线*/
+		flex:1;
+		content:"";
+		height: 0.0625rem;
+		background-color: #ccc;
+}
+.other-text[data-v-b4d1e3fa]::before{ /*文本后边的那条线*/
+		flex:1;
+		content:"";
+		height: 0.0625rem;
+		background-color: #ccc;
+}
+.other-ways[data-v-b4d1e3fa]{
+		display: flex;
+		justify-content: space-around;
+}
+.other-item[data-v-b4d1e3fa]{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+}
+.other-item uni-image[data-v-b4d1e3fa]{
+		width: 2.5rem;
+		height: 2.5rem;
+}
+
+
+.login-tel[data-v-b237504c]{
+	width:100vw;
+	height: 100vh;
+}
+.tel-main[data-v-b237504c]{
+	padding: 0 0.625rem;
+}
+.close-img[data-v-b237504c]{
+	width: 1.875rem;
+	height: 1.875rem;
+}
+.close[data-v-b237504c]{
+	padding: 1.875rem 0;
+}
+.logo[data-v-b237504c]{
+	padding-bottom:3.125rem;
+	display: flex;
+	justify-content: center;
+}
+.tel[data-v-b237504c]{
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	color:#fff;
+	background-color: #00B2C2;
+	border-radius: 1.25rem;
+}
+.login-go[data-v-b237504c]{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login-go uni-image[data-v-b237504c]{
+	height: 1.875rem;
+	width: 1.875rem;
+}
+
+/* 第二屏(和第一屏同放在一个swiper里就可以了),网易云的年度报告也是这样搞得吧*/
+.close-center[data-v-b237504c]{
+	display: flex;
+}
+.close-center uni-view[data-v-b237504c]{
+	flex:1;
+	white-space: nowrap;
+}
+.login-form[data-v-b237504c]{
+	padding-top: 3.125rem;
+}
+.login-user[data-v-b237504c]{
+	font-size: 1rem;
+	padding: 0.3125rem 0;
+	display: flex;
+	align-items: center;
+	border-bottom: 0.0625rem solid #f7f7f7;
+}
+.user-text[data-v-b237504c]{
+	padding-right: 0.3125rem;
+}
+.login-quick[data-v-b237504c]{
+	display: flex;
+	justify-content: space-between;
+	padding: 0.625rem 0;
+}
+.reminder[data-v-b237504c]{
+	color: #ccc;
+	padding: 0.625rem 0;
+	text-align: center;
+}

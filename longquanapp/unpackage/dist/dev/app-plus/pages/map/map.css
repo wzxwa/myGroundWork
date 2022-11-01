@@ -1,0 +1,57 @@
+
+.map[data-v-0b31f540]{
+		width: 100%;
+		display: block;
+}
+.selected-index-text[data-v-0b31f540]{
+		color: #00B2C2;
+		display: inline-block;
+		padding: 0.3125rem 0.9375rem;
+		font-size: 1.125rem;
+		border-bottom: 0.1875rem solid #00B2C2;
+}
+.unselected-index-text[data-v-0b31f540]{
+		color: #3f3f3f;
+		display: inline-block;
+		padding: 0.3125rem 0.9375rem;
+		font-size: 1.125rem;
+}
+.index-page[data-v-0b31f540]{
+		display: flex;
+		justify-content: space-around;
+}
+.scroll-content[data-v-0b31f540]{
+		width: 100%;
+		height: 2.5rem;
+		white-space: nowrap;
+}
+.scroll-item[data-v-0b31f540]{
+		display: inline-block;
+		padding: 0.3125rem 0.9375rem;
+		font-size: 1.125rem;
+}
+.button-right[data-v-0b31f540]{
+        position: fixed;
+        bottom: 0;
+		right: 0;
+        height: 200px;
+        background-color: hsla(120,100%,50%,0.3);
+        width: 60px;
+}
+.button-left[data-v-0b31f540]{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		height: 200px;
+		background-color: hsla(120,100%,50%,0.3);
+		width: 60px;
+}
+.roads-img[data-v-0b31f540]{
+		position: fixed;
+		bottom: 81px;
+		left: 60px;
+		height: 110px;
+		width: 60px;
+		border:5px solid red;
+		border-radius: 15px;
+}

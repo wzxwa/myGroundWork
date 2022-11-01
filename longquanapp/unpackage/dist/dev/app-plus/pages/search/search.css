@@ -1,0 +1,21 @@
+
+.search-item[data-v-4cedc0c6]{
+		padding: 0.625rem;
+}
+.search-title[data-v-4cedc0c6]{
+		display: flex;
+		justify-content: space-between;
+}
+.search-name[data-v-4cedc0c6]{
+		padding: 0.125rem 0.75rem;
+		background-color: #e1e1e1;
+		display: inline-block;
+		border-radius: 0.8125rem;
+		margin:0.3125rem;
+}
+.gray-color[data-v-4cedc0c6]{
+		color: #636263;
+}
+.dustbin[data-v-4cedc0c6]{
+		font-size: 30px;
+}
